@@ -1,0 +1,241 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+  .container {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+  }
+
+  .fixed {
+     
+    -webkit-flex: 0;
+    -moz-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+
+  }
+  .rainbow {
+    background-color: white;
+    min-height: 100px;
+    
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    -webkit-flex: auto;
+    -moz-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+  }
+  
+  .rainbow  div {
+    text-indent: -5000px;
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+    padding:  10px 5px 0;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    -webkit-flex: auto;
+    -moz-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    position: relative;
+   
+  }
+
+  .rainbow div::after {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    font-size: 20px;
+    text-indent: 0;
+    color: rgba(255, 255, 255, 0);
+    content: "*";
+    font-size: 34px;
+
+    -webkit-animation: sparkle 14s linear 0s infinite;
+    -moz-animation: sparkle 14s linear 0s infinite;
+    animation: sparkle 14s linear 0s infinite;
+  }
+
+
+
+  .rainbow > div {
+    background-color: red;
+  }
+
+  .rainbow > div > div{
+    background-color: orange;
+  }
+
+  .rainbow > div > div::after {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s
+  }
+
+  .rainbow > div > div > div{
+    background-color: yellow;
+  }
+
+  .rainbow > div > div > div::after {
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    animation-delay: 4s
+    color: 
+  }
+
+  .rainbow > div > div > div > div {
+    background-color: green;
+  }
+
+  .rainbow > div > div > div > div::after {
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    animation-delay: 6s
+  }
+
+  .rainbow > div > div > div > div > div{
+    background-color: blue;
+  }
+
+  .rainbow > div > div > div > div > div::after {
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    animation-delay: 8s
+  }
+
+  .rainbow > div > div > div > div > div > div{
+    background-color: indigo;
+  }
+
+  .rainbow > div > div > div > div > div > div::after {
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    animation-delay: 10s
+  }
+
+  .rainbow > div > div > div> div > div > div > div{
+    background-color: violet;
+  }
+
+  .rainbow > div > div > div> div > div > div > div::after {
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    animation-delay: 12s
+  }
+
+  .rainbow > div > div > div> div > div > div > div > div{
+    background-color: white;
+  }
+
+  @-webkit-keyframes sparkle {
+    from { color: rgba(255, 255, 255, 0); }
+    14% { color: rgba(255, 255, 255, 1); }
+    28% { color: rgba(255, 255, 255, 0); }
+    100% { color: rgba(255, 255, 255, 0); }
+  }
+
+  @-moz-keyframes sparkle {
+    from { color: rgba(255, 255, 255, 0); }
+    14% { color: rgba(255, 255, 255, 1); }
+    28% { color: rgba(255, 255, 255, 0); }
+    100% { color: rgba(255, 255, 255, 0); }
+  }
+    
+  @keyframes sparkle {
+    from { color: rgba(255, 255, 255, 0); }
+    14% { color: rgba(255, 255, 255, 1); }
+    28% { color: rgba(255, 255, 255, 0); }
+    100% { color: rgba(255, 255, 255, 0); }
+  }
+
+
+
+
+
